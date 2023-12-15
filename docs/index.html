@@ -1,0 +1,244 @@
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>VectorTalker</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="./index_files/icon.png">
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./index_files/codemirror.min.css">
+    <link rel="stylesheet" href="./index_files/app.css">
+    <link rel="stylesheet" href="./index_files/bootstrap.min(1).css">
+
+    <script type="text/javascript" async="" src="./index_files/analytics.js"></script>
+    <script type="text/javascript" async="" src="./index_files/analytics(1).js"></script>
+    <script async="" src="./index_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110862391-3');
+    </script>
+
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/codemirror.min.js"></script>
+    <script src="./index_files/clipboard.min.js"></script>
+
+    <script src="./index_files/app.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="container" id="main">
+        <!-- Section: title -->
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                VectorTalker: SVG Talking Face Generation with Progressive Vectorisation
+
+            </h1>
+        </div>
+
+        <!-- Section: authors -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/hh0525">
+                          Hao Hu
+                        </a><sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://xuanwangvc.github.io/">
+                        Xuan Wang
+                        </a><sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://mrtornado24.github.io/">
+                        Jingxiang Sun
+                        </a><sup>3</sup>
+                    </li>
+                    <li>
+                        <a href="fanyanbo.fyb@antgroup.com">
+                        Yanbo Fan
+                        </a><sup>2</sup>
+                    </li>
+
+                    <li>
+                        <a href="https://yuguo-xjtu.github.io/">
+                        Yu Guo
+                        </a><sup>1</sup>
+                    </li>
+
+                    <li>
+                        <a href="https://caiguijiang.github.io/">
+                        Caigui Jiang
+                        </a><sup>1</sup>
+                    </li>
+                </ul>
+
+                
+            </div>
+        </div>
+
+        <!-- Section: Affiliations -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <sup>1</sup>Xi'an Jiaotong University
+                    </li>
+                    <li>
+                        <sup>2</sup>Ant Group
+                    </li>
+                    <li>
+                        <sup>3</sup>Tsinghua University
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section: Links -->
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <div class="buttons" style="text-align:center;">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2312.07539"  style="margin:20px; " >
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="rgb(0,0,0)" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>
+                Paper
+            </a>
+           
+            <a class="btn btn-light" role="button" href="https://github.com/hh0525/VectorTalker" style="margin:20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
+                            1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 
+                            3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 
+                            2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                </svg>
+                Code
+            </a>
+        </div>
+        </div>
+        </div>
+
+        <!-- Section: Abstract -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    High-fidelity and efficient audio-driven talking head generation has been a key research topic in computer graphics and computer vision. In this work, we study vector image based audio-driven talking head generation. Compared with directly animating the raster image that most widely used in existing works, vector image enjoys its excellent scalability being used for many applications. There are two main challenges for vector image based talking head generation: the high-quality vector image reconstruction w.r.t. the source portrait image and the vivid animation w.r.t. the audio signal. To address these, we propose a novel scalable vector graphic reconstruction and animation method, dubbed VectorTalker. Specifically, for the highfidelity reconstruction, VectorTalker hierarchically reconstructs the vector image in a coarse-to-fine manner. For the vivid audio-driven facial animation, we propose to use facial landmarks as intermediate motion representation and propose an efficient landmark-driven vector image deformation module. Our approach can handle various styles of portrait images within a unified framework, including Japanese manga, cartoon, and photorealistic images. We conduct extensive quantitative and qualitative evaluations and the experimental results demonstrate the superiority of VectorTalker in both vector graphic reconstruction and audio-driven animation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section: Teasers -->
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
+                <img src="./index_files/images/pipeline.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Given an input raster portrait image, our method first segment the image to get semantic mask (back, front, and local) and smooth the image to obtain different levels of smoothed representations as target image. Then we perform the differentiable vectorization to reconstruct three SVG layers constrained by semantic mask progressively and merge them to get final SVG result. For SVG talking animation, we extract landmarks and predict new ones from an audio clip to warp SVG paths by affine transformation.
+                </p>
+                <br>
+                <br>
+
+              
+            </div>
+        </div> -->
+
+
+        <!-- Section: Comparison -->
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Comparison
+                </h3>
+                <img src="./index_files/images/comparison1.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    We compare our progressive vectorization algorithm with DiffVG and LIVE. The experiments illustrate that our method produces better results. We highlight the differences in the boxes on the right, and readers can zoom in for a clearer view.
+                </p>
+                <br>
+                <br>
+            </div>
+        </div> -->
+
+        <!-- Section: Comparison -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <img src="./index_files/images/demos.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Our results of SVG animation. Our method makes SVG talk vividly. It allows the control of lip motion, eye blink and head poses.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section: Video-->
+        <div class="row" id="video">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Video</h3>
+                <div class="text-center">
+                    <video id="video_id" width="100%" controls="" controlsList="nodownload">>
+                        <source src="./index_files/videos/video.mp4" type="video/mp4">
+                        <track label="English" kind="subtitles" srclang="en" src="./index_files/videos/captions.vtt">
+                    </video>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                        var video = document.querySelector('#video_id'); // get the video element
+                        var tracks = video.textTracks; // one for each track element
+                        var track = tracks[0]; // corresponds to the first track element
+                        track.mode = 'hidden';});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Section: Citation-->
+        <div class="row" id="BibTeX">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+               If you find our project useful in your research, please cite:
+                <pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 10px">
+                    <code>
+                @InProceedings{hu2023VectorTalker,
+                    author    = {Hao, Hu and Xuan, Wang and Jingxiang, Sun and Yanbo, Fan and Yu, Guo and  Caigui, Jiang},
+                    title     = {VectorTalker: SVG Talking Face Generation with Progressive Vectorisation},
+                    booktitle = {},
+                    year      = {2023}
+                }
+            </code>
+            </pre>
+            </div>
+        </div>
+
+        <!--Section: Acknowledgment-->
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgments
+                </h3>
+                The website template was borrowed from <a href="https://curvenet.github.io/">CurveNet</a>.
+                <p></p>
+                <br><br><br>
+            </div>
+        </div>
+    </div> -->
+
+
+</body></html>
